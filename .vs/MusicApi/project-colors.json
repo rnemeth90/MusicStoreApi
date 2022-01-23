@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "06893a3f-d367-49fe-b543-4912674db4b2": {
+      "ProjectGuid": "06893a3f-d367-49fe-b543-4912674db4b2",
+      "DisplayName": "MusicApi",
+      "ColorIndex": 0
+    },
+    "7a225296-7512-4f76-bc37-df02656cc723": {
+      "ProjectGuid": "7a225296-7512-4f76-bc37-df02656cc723",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}
