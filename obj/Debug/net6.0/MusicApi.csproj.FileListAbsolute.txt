@@ -58,3 +58,8 @@ C:\repos\MusicApi\obj\Debug\net6.0\MusicApi.pdb
 C:\repos\MusicApi\obj\Debug\net6.0\MusicApi.genruntimeconfig.cache
 C:\repos\MusicApi\bin\Debug\net6.0\Humanizer.dll
 C:\repos\MusicApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\repos\MusicApi\bin\Debug\net6.0\Azure.Core.dll
+C:\repos\MusicApi\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+C:\repos\MusicApi\bin\Debug\net6.0\Azure.Storage.Common.dll
+C:\repos\MusicApi\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\repos\MusicApi\bin\Debug\net6.0\System.Memory.Data.dll

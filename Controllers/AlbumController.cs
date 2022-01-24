@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Azure.Storage.Blobs;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MusicApi.Data;
+using MusicApi.Helpers;
 using MusicApi.Models;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -39,11 +42,22 @@ namespace MusicApi.Controllers
             return Ok(album);
         }
 
+        //// POST api/<AlbumController>
+        //[HttpPost]
+        //public async Task<IActionResult> Post([FromBody] Album album)
+        //{
+        //    await _dbContext.AddAsync(album);
+        //    await _dbContext.SaveChangesAsync();
+        //    return StatusCode(StatusCodes.Status201Created);
+        //}
+
         // POST api/<AlbumController>
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] Album album)
+        public async Task<IActionResult> Post([FromForm] Album album)
         {
-            await _dbContext.AddAsync(album);
+            var imageUrl = await FileHelper.UploadImage(album.AlbumCover);
+            album.AlbumCoverUrl = imageUrl;
+            await _dbContext.Albums.AddAsync(album);
             await _dbContext.SaveChangesAsync();
             return StatusCode(StatusCodes.Status201Created);
         }
