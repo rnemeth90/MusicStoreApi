@@ -73,6 +73,7 @@ namespace MusicApi.Controllers
             }
             else
             {
+                album.AlbumCoverUrl = FileHelper.GetFileUrl(albumObject.AlbumCover);
                 album.Name = albumObject.Name;
                 album.Artist = albumObject.Artist;
                 album.SongCount = albumObject.SongCount;   
