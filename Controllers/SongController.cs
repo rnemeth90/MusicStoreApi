@@ -42,6 +42,12 @@ namespace MusicApi.Controllers
             }
         }
 
+        [HttpGet("[action]/{id}")]
+        public int Test(int id)
+        {
+            return id;
+        }
+
         // POST api/<SongController>
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] Song song)

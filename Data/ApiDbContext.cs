@@ -11,22 +11,23 @@ namespace MusicApi.Data
 
         public DbSet<Song> Songs { get; set; }
         public DbSet<Album> Albums { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+
+        protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
-            modelBuilder.Entity<Song>().HasData(
+            modelbuilder.Entity<Song>().HasData(
                     new Song
-                    {
+                    { 
                         Id = 1,
                         Title = "Willow",
                         Language = "en",
-                        Duration = "4:35"
+                        Duration = "4:00"
                     },
                     new Song
-                    {
+                    { 
                         Id = 2,
-                        Title = "Another Song",
+                        Title = "Another One",
                         Language = "en",
-                        Duration = "4:35"
+                        Duration = "5:00"
                     }
                 );
         }
