@@ -20,11 +20,13 @@ namespace MusicApi.Models
 
         [Required(ErrorMessage = "Duration cannot be null or empty")]
         public string Duration { get; set; }
+        public string AlbumCoverUrl { get; set; }
+        public ICollection<Song> Songs { get; set; }
 
-        public List<Song> Songs { get; set; }
-     
         [NotMapped]
         public IFormFile AlbumCover { get; set; }
-        public string AlbumCoverUrl { get; set; }
+
+        [NotMapped]
+        public IFormFile Image { get; set; }
     }
 }

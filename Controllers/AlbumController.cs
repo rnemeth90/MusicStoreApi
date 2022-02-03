@@ -42,15 +42,6 @@ namespace MusicApi.Controllers
             return Ok(album);
         }
 
-        //// POST api/<AlbumController>
-        //[HttpPost]
-        //public async Task<IActionResult> Post([FromBody] Album album)
-        //{
-        //    await _dbContext.AddAsync(album);
-        //    await _dbContext.SaveChangesAsync();
-        //    return StatusCode(StatusCodes.Status201Created);
-        //}
-
         // POST api/<AlbumController>
         [HttpPost]
         public async Task<IActionResult> Post([FromForm] Album album)
@@ -73,7 +64,7 @@ namespace MusicApi.Controllers
             }
             else
             {
-                album.AlbumCoverUrl = FileHelper.GetFileUrl(albumObject.AlbumCover);
+                album.AlbumCoverUrl = FileHelper.GetImageUrl(albumObject.AlbumCover);
                 album.Name = albumObject.Name;
                 album.Artist = albumObject.Artist;
                 album.SongCount = albumObject.SongCount;   
