@@ -37,11 +37,11 @@ namespace MusicApi
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MusicApi", Version = "v1" });
             });
 
-            //services.AddDbContext<ApiDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SqlConnection")));
+            services.AddDbContext<ApiDbContext>(options => options.UseSqlServer("Server=tcp:rnemeth-lab-sqlsvr-01.database.windows.net,1433;Initial Catalog=azrtnmusicapisqldb;Persist Security Info=False;User ID=azadmin;Password=Pa$$w0rd@01;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
 
             // add the database context
-            services.AddDbContext<ApiDbContext>(options =>
-                    options.UseSqlServer(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = musicapi; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False"));
+            //services.AddDbContext<ApiDbContext>(options =>
+            //        options.UseSqlServer(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = musicapi; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False"));
         
             // add support for returning XML content type
             services.AddMvc().AddXmlDataContractSerializerFormatters(); 

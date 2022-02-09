@@ -6,20 +6,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkEfuZPY1Vk+RZ1NWGOtaVAAAAAACAAAAAAAQZgAAAAEAACAAAAC5kynZ1/Hj5MxEzq3lTMl5RUV625/ex+oyb/BJeiAeygAAAAAOgAAAAAIAACAAAADQzGe2VmUonys0yzflG1wbAxnobEkIAS6z5Hw+2LNx0IAAAABeC9B4Dt7TUlifkYk8nnrN0xfksR4tmc8CY4w0zLHqUoab7PuSOxnMc/x0ptAi2Hg2evW8NoLeaV4gzjOqwlpchWgTWc3Hq5s5cMpAKQFDaweES2yz2gVFXQWzK0hVjcfEsJsaw6eLuN4elRN8dDgxJszCQCUjUhksARJtPgvB00AAAACPGGt6VXuRmAtYmSu9KqQcXgOR9+NKaL3lV0ln2IoTPMTetn2m5dhVitJAQIhDRLACnADAKAChNYMq4XntAk2g</EncryptedPassword>
-    <History>False|2022-02-07T13:18:01.6153614Z;False|2022-02-07T08:12:24.4535153-05:00;False|2022-02-07T08:10:12.0586456-05:00;</History>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkEfuZPY1Vk+RZ1NWGOtaVAAAAAACAAAAAAAQZgAAAAEAACAAAAAmgpYijatSXIrluMX842epgS1MPYqXmVZwnCln0jocogAAAAAOgAAAAAIAACAAAAACWTrWs8y8+aRxT0K3aijxD/PEu5rrepDovWolAtjJ7IAAAABP4x+jrqsmLNvBnAUT+zON3bIOcczINCvBZXW4DDt9ZXAjFfOLmm5lyXgRH33WTpjZ5FWqMVJGuvxq2U07s9KFP9wqUnPVxrvBP3GDn8l5yGVF2ijw7r9UT3OTD672MMiV0EC2cjocFRGTRnAdvryoY/kaIe+9bDrBBUA2jQg9u0AAAABoMTBTwy6e8GvDv8QptEGXGP3BHcjOHdT+yc5fOwsLWhvFThf7CK6vExHScnxOaUt2i03XXWZz08Ub3W7n2fHT</EncryptedPassword>
+    <History>True|2022-02-09T21:57:58.6400748Z;True|2022-02-09T16:37:42.0436114-05:00;False|2022-02-09T16:34:44.6208726-05:00;True|2022-02-09T16:34:00.1212244-05:00;True|2022-02-09T16:31:02.2926576-05:00;</History>
   </PropertyGroup>
   <ItemGroup>
-    <DestinationConnectionStrings Include="Kestrel:Certificates:Development:Password">
-      <Value>72d521ba-0475-4c6a-9313-add7d57282b5</Value>
-    </DestinationConnectionStrings>
-    <DestinationConnectionStrings Include="SqlConnection">
-      <Value>72d521ba-0475-4c6a-9313-add7d57282b5</Value>
-    </DestinationConnectionStrings>
-  </ItemGroup>
-  <ItemGroup>
     <EFMigrations Include="MusicApi.Data.ApiDbContext">
-      <Value>72d521ba-0475-4c6a-9313-add7d57282b5</Value>
+      <Value>Server=tcp:rnemeth-lab-sqlsvr-01.database.windows.net,1433%3bInitial Catalog=azrtnmusicapisqldb%3bPersist Security Info=False%3bUser ID=azadmin%3bPassword=Pa%24%24w0rd%4001%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
     </EFMigrations>
   </ItemGroup>
 </Project>
