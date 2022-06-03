@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MusicApi.Data;
+using Music.Api.Data;
 
 #nullable disable
 
-namespace MusicApi.Migrations
+namespace Music.Api.Migrations
 {
     [DbContext(typeof(ApiDbContext))]
     [Migration("20220129204457_InitializeDatabase")]

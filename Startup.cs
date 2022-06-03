@@ -8,13 +8,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using MusicApi.Data;
+using Music.Api.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MusicApi
+namespace Music.Api
 {
     public class Startup
     {
@@ -27,6 +27,7 @@ namespace MusicApi
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        // here we configure dependencies
         public void ConfigureServices(IServiceCollection services)
         {
 
@@ -50,6 +51,9 @@ namespace MusicApi
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        // here we configure middleware
+        // run, use, next
+
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ApiDbContext dbContext)
         {
             if (env.IsDevelopment())
@@ -66,6 +70,9 @@ namespace MusicApi
             //app.UseAuthentication();
 
             app.UseAuthorization();
+
+            app.UseHttpLogging();
+
 
             app.UseEndpoints(endpoints =>
             {

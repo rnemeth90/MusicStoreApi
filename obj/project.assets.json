@@ -2528,26 +2528,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ryan.Nemeth\\.nuget\\packages\\": {}
+    "/home/ryan/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repos\\MusicApi\\MusicApi.csproj",
-      "projectName": "MusicApi",
-      "projectPath": "C:\\repos\\MusicApi\\MusicApi.csproj",
-      "packagesPath": "C:\\Users\\Ryan.Nemeth\\.nuget\\packages\\",
-      "outputPath": "C:\\repos\\MusicApi\\obj\\",
+      "projectUniqueName": "/mnt/c/repos/training/MusicApi/Music.API/Music.Api.csproj",
+      "projectName": "Music.Api",
+      "projectPath": "/mnt/c/repos/training/MusicApi/Music.API/Music.Api.csproj",
+      "packagesPath": "/home/ryan/.nuget/packages/",
+      "outputPath": "/mnt/c/repos/training/MusicApi/Music.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ryan.Nemeth\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/ryan/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2611,7 +2609,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
       }
     }
   }

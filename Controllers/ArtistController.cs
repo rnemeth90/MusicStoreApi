@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MusicApi.Data;
-using MusicApi.Helpers;
-using MusicApi.Models;
+using Music.Api.Data;
+using Music.Api.Helpers;
+using Music.Api.Models;
 using System.Threading.Tasks;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
-namespace MusicApi.Controllers
+namespace Music.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -24,7 +24,7 @@ namespace MusicApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromForm] Artist artist)
         {
-            var imageUrl = FileHelper.GetImageUrl(artist.Image);
+            var imageUrl = FileHelper.GetFileUrl(artist.Image, "artist-headshots");
             artist.ImageUrl = imageUrl;
             await _dbContext.Artists.AddAsync(artist);
             await _dbContext.SaveChangesAsync();

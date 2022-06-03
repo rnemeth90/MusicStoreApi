@@ -3,7 +3,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MusicApi.Models
+namespace Music.Api.Models
 {
     // represents a song
     public class Song

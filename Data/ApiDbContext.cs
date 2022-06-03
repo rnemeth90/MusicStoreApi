@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MusicApi.Models;
+using Music.Api.Models;
 
-namespace MusicApi.Data
+namespace Music.Api.Data
 {
     public class ApiDbContext : DbContext
     {

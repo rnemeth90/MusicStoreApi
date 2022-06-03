@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace MusicApi.Migrations
+namespace Music.Api.Migrations
 {
     public partial class InitializeDatabase : Migration
     {

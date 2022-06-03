@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MusicApi.Data;
-using MusicApi.Helpers;
-using MusicApi.Models;
+using Music.Api.Data;
+using Music.Api.Helpers;
+using Music.Api.Models;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -11,7 +11,7 @@ using System.Linq;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace MusicApi.Controllers
+namespace Music.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -115,7 +115,7 @@ namespace MusicApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromForm] Song song)
         {
-            var audioUrl = await FileHelper.UploadFile(song.AudioFile);
+            var audioUrl = await FileHelper.UploadFile(song.AudioFile, "audio-files");
             song.AudioUrl = audioUrl;
             var uploadTime = DateTime.Now;
             song.UploadedDate = uploadTime;

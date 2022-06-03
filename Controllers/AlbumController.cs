@@ -2,16 +2,16 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MusicApi.Data;
-using MusicApi.Helpers;
-using MusicApi.Models;
+using Music.Api.Data;
+using Music.Api.Helpers;
+using Music.Api.Models;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace MusicApi.Controllers
+namespace Music.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -46,7 +46,7 @@ namespace MusicApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromForm] Album album)
         {
-            var imageUrl = await FileHelper.UploadImage(album.AlbumCover);
+            var imageUrl = await FileHelper.UploadFile(album.AlbumCover, "album-art");
             album.AlbumCoverUrl = imageUrl;
             await _dbContext.Albums.AddAsync(album);
             await _dbContext.SaveChangesAsync();
@@ -64,7 +64,7 @@ namespace MusicApi.Controllers
             }
             else
             {
-                album.AlbumCoverUrl = FileHelper.GetImageUrl(albumObject.AlbumCover);
+                album.AlbumCoverUrl = FileHelper.GetFileUrl(albumObject.AlbumCover, "album-art");
                 album.Name = albumObject.Name;
                 album.Artist = albumObject.Artist;
                 album.SongCount = albumObject.SongCount;   

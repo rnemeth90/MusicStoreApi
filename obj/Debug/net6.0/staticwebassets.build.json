@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "+UQ5XzYcwndAgQvJftDxFUqrisK4b0jPfY0UwEl8Wb0=",
-  "Source": "MusicApi",
-  "BasePath": "_content/MusicApi",
+  "Hash": "hPkR/dLmww9HHmyibkeuuZohgLQ9H1tpTJP+kGexeUw=",
+  "Source": "Music.Api",
+  "BasePath": "_content/Music.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
