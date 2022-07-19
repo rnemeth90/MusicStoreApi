@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="IIS Web Application Name" description="" value="azrtnmusicapi" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\repos\\MusicApi\\obj\\Release\\net6\.0\\PubTmp\\Out\\$" />
-  </parameter>
-  <parameter name="MusicApi.Data.ApiDbContext" description="" value="Server=tcp:rnemeth-lab-sqlsvr-01.database.windows.net,1433;Initial Catalog=azrtnmusicapisqldb;Persist Security Info=False;User ID=azadmin;Password=Pa$$w0rd@01;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="dbfullsql">
-    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\repos\\MusicApi\\obj\\Release\\net6\.0\\PubTmp\\EFSQLScripts\\MusicApi\.Data\.ApiDbContext\.sql$" />
-  </parameter>
-</parameters>
