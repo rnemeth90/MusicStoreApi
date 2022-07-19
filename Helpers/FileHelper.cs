@@ -9,7 +9,7 @@ namespace Music.Api.Helpers
 {
     public static class FileHelper
     {
-        public static readonly string connectionString = "DefaultEndpointsProtocol=https;AccountName=azrtnmusicapistorage;AccountKey=+HI4K7faTP0WfMvoCjFltNfDQI/c5XpdqaSWyxy7XWhmXTcUNHso7OQlkciUTXB2FXaR6WO4aQGDL21/d1WQMg==;EndpointSuffix=core.windows.net";
+        public static readonly string connectionString = "";
 
         public static async Task<string> UploadFile(IFormFile file, string containerName)
         {
